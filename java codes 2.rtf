@@ -1,0 +1,303 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\i\f0\fs22\lang9 class Casting \{\par
+    public static void main(String[] args) \{\par
+       int a=65;\par
+       long b=a;\par
+       System.out.println(b);\par
+       float x=a;\par
+       System.out.println(x);\par
+       double d=a;\par
+       System.out.println(d);\par
+       char c=(char)a;\par
+       System.out.println(c);\par
+       double m=5687.265;\par
+       int n=(int)m;\par
+       System.out.println(n);\par
+       float e=(float)m;\par
+       System.out.println(e);\par
+       long g=(long)m;\par
+       System.out.println(g);\par
+       char z='z';\par
+       int u=(int)z;\par
+       System.out.println(u);\par
+       short s=68;\par
+       byte h=(byte)s;\par
+       System.out.println(h);\par
+       float t=256.7f;\par
+       double v=(double)t;\par
+       System.out.println(v);\par
+       \par
+    \}\par
+\}\par
+\par
+\par
+\ul\b\i0 Output:-\ulnone\b0\i\par
+\i0 65\par
+65.0\par
+65.0\par
+A\par
+5687\par
+5687.265\par
+5687\par
+122\par
+68\par
+256.70001220703125\par
+\ul\b\i calculating fee  based on percentage:-\par
+\ulnone\b0\i0 class  Student \{\par
+    public static void main(String[] args) \{\par
+        String name="chandana";\par
+        char section='A';\par
+        int s1=80,s2=86,s3=98,s4=95,s5=92,s6=96;\par
+        int total=s1+s2+s3+s4+s5+s6;\par
+        double per=(total/600.0)*100;\par
+        int fee=50000;\par
+        System.out.println(" Name : "+name);\par
+        System.out.println(" Section : "+section);\par
+        System.out.println("per : "+per);\par
+        if (per>80)\par
+        \{\par
+            System.out.println(fee-10000);\par
+        \}\par
+        else\par
+        \{\par
+        System.out.println(fee+20000);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\ul\b\i output:-\ulnone\b0\i0\par
+ Name : chandana\par
+ Section : A\par
+per : 91.16666666666666\par
+40000\par
+\par
+\par
+\ul\b\i Calculating money on discounts:-\ulnone\b0\i0\par
+class  Shopping \{\par
+    public static void main(String[] args) \{\par
+        String product="Watch";\par
+        String brand="Boult";\par
+        \par
+        double discount=71/100.0;\par
+        int actual_price=4499;\par
+        String payment="online";\par
+        double discount_price=(actual_price*discount)-actual_price;\par
+        System.out.println("product name : "+product);\par
+        System.out.println("brand : "+brand);\par
+        if (payment=="online")\par
+        \{\par
+            System.out.println("price : "+((discount_price)*(2/100.0)-discount_price));\par
+        \}\par
+        else\{\par
+            System.out.println("price : "+discount_price);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\ul\b\i output:-\par
+\ulnone\b0\i0 product name : Watch\par
+brand : Boult\par
+price : 1278.6158\par
+\ul\b\i calculating shopping details based on bank balence and payment mode:\par
+\ulnone\b0\i0 class  Shopping \{\par
+    public static void main(String[] args) \{\par
+        String product="Watch";\par
+        String brand="Boult";\par
+        int balance=25000;\par
+        String payment="online";\par
+        int coupon=3;\par
+        int actual_price=4499;\par
+        double bal_discount=(actual_price-(actual_price)*(coupon/100.0));\par
+        System.out.println("product name : "+product);\par
+        System.out.println("brand : "+brand);\par
+        System.out.println("Orginal_price: "+actual_price);\par
+        if (balance>15000)\par
+        \{\par
+            System.out.println("bal_price : "+bal_discount);\par
+        \}\par
+        else\{\par
+            System.out.println("bal_price : "+actual_price);\par
+        \}\par
+        \par
+        if (payment=="online")\par
+        \{\par
+            System.out.println("pay_price : "+(bal_discount-(bal_discount)*(2/100.0)));\par
+        \}\par
+        else\{\par
+            System.out.println("pay_price : "+bal_discount);\par
+        \}\par
+\par
+    \}\par
+\}\par
+\ul\b\i output:-\ulnone\b0\i0\par
+product name : Watch\par
+brand : Boult\par
+Orginal_price: 4499\par
+bal_price : 4364.03\par
+pay_price : 4276.7494\par
+\par
+\ul\b\i calculate shopping details using coupen:-\ulnone\b0\i0\par
+class  Shopping \{\par
+    public static void main(String[] args) \{\par
+        String product="Watch";\par
+        String brand="Boult";\par
+        int balance=25000;\par
+        int coupon=3;\par
+        int actual_price=4499;\par
+        System.out.println("product name : "+product);\par
+        System.out.println("brand : "+brand);\par
+        if (balance>15000)\par
+        \{\par
+            System.out.println("price : "+(actual_price-(actual_price)*(coupon/100.0)));\par
+        \}\par
+        else\{\par
+            System.out.println("price : "+actual_price);\par
+        \}\par
+    \}\par
+\}\par
+output:_\par
+product name : Watch\par
+brand : Boult\par
+price : 4364.03\par
+\par
+\par
+\ul\b\i printing numbers using if condition swapping:-\ulnone\b0\i0\par
+class HelloWorld \{\par
+    public static void main(String[] args) \{\par
+        int a=15,b=2,c=11,temp=0;\par
+        if (a>b)\par
+        \{\par
+            temp=a;\par
+            a=b;\par
+            b=temp;\par
+        \}\par
+        \par
+        if (b>c)\{\par
+            temp=b;\par
+            b=c;\par
+            c=temp;\par
+        \}\par
+        if(c>a)\par
+        \{\par
+            temp=c;\par
+            c=a;\par
+            a=temp;\par
+        \}\par
+        if (a<b)\par
+        \{\par
+            temp=a;\par
+            a=b;\par
+            b=temp;\par
+        \}\par
+        \par
+        if (b<c)\{\par
+            temp=b;\par
+            b=c;\par
+            c=temp;\par
+        \}\par
+        if(c<a)\par
+        \{\par
+            temp=c;\par
+            c=a;\par
+            a=temp;\par
+        \}\par
+        System.out.println(a+" "+b+" "+c);\par
+    \}\par
+\}\par
+\par
+output:-\par
+2 11 15\par
+\par
+\ul\b\i even or odd:-\ulnone\b0\i0\par
+\par
+class HelloWorld \{\par
+    public static void main(String[] args) \{\par
+        int a=27;\par
+        if ((a%2)==0)\par
+        \{\par
+            System.out.println("The given number is even");\par
+        \}\par
+        else\par
+        \{\par
+            System.out.println("The given number is odd");\par
+        \}\par
+    \}\par
+\}\par
+\ul\b\i last digit is even or odd:-\ulnone\b0\i0\par
+class HelloWorld \{\par
+    public static void main(String[] args) \par
+    \{\par
+       int a=48;\par
+        int rem=(a%10);\par
+        if ((rem%2)==0)\par
+        \{\par
+            System.out.println(rem+" is even");\par
+        \}\par
+        else\par
+        \{\par
+            System.out.println(rem+" is odd");\par
+        \}\par
+    \}\par
+\}\par
+output:-\par
+java -cp /tmp/hg4oXefflg/HelloWorld\par
+8 is even\par
+\par
+ \par
+class HelloWorld \{\par
+    public static void main(String[] args) \{\par
+        int n=1324%1000;\par
+        System.out.println(n);\par
+        if ((n%6)==0)\par
+        \{\par
+            int v=(n%10);\par
+            System.out.println(v);\par
+            if((v%2)==0)\par
+            \{\par
+                System.out.println(Math.pow(v,2));\par
+            \}\par
+            else\par
+            \{\par
+                System.out.println(v-2);\par
+            \}\par
+        \}\par
+        else\par
+        \{\par
+            System.out.println("Not divisible by 6");\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\par
+\par
+// Online Java Compiler\par
+// Use this editor to write, compile and run your Java code online\par
+\par
+class HelloWorld \{\par
+    public static void main(String[] args) \{\par
+        int n=5;\par
+        if(n==1||n==3||n==5||n==7||n==8||n==10||n==12)\par
+        \{\par
+            System.out.println("31 Days");\par
+        \}\par
+        else if(n==4||n==6||n==9||n==11)\par
+        \{\par
+            System.out.println("30 Days");\par
+        \}\par
+        else if(n==2)\par
+        \{\par
+            System.out.println("28/29 Days");\par
+        \}\par
+        else\par
+        \{\par
+            System.out.println("Invalid input");\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\par
+}
+ 
